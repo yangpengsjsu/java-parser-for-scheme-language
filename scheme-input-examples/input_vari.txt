@@ -1,0 +1,28 @@
+(define uno 1)
+
+(define (somma x1 x2) (* x1 x2))
+
+(define (zero) 0)
+
+(define e (and)) 
+(define e (and 1 uno "uno" #t #f)) 
+
+(define e (or))
+(define e (or 1 uno "uno" #t #f))
+
+(define e (cond (uno 1)))
+(define e (cond (uno 1)(due 2)(tre 3)(quattro 4)) )
+(define e (cond (uno 1)(due 2) (else 3)) )
+(define e (cond (else 3)) )
+
+(define quattro (local ((define due 2)) (* due due) ) )
+(define sei (local ((define due 2)(define tre 3)) (* due tre) ) )
+
+(define cinque (lambda () 5) )
+(define raddoppia (lambda (x1 x2) (* x1 x2)) )
+
+(define lista (uno 1 "uno" #t #f) )
+
+
+
+
